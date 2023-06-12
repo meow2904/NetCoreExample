@@ -1,0 +1,291 @@
+﻿<div class="card card-xl-stretch mb-xl-8">
+    <!--begin::Header-->
+    <div class="card-header border-0">
+        <h3 class="card-title fw-bolder text-dark">Radio</h3>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <!--end::Header-->
+    <!--begin::Body-->
+    <div class="card-body pt-2">
+        <div class="col-lg-12 form-control-floating card w-250px">
+            <div class="col-form-label " style="border: 1px solid #e4e6ef;border-radius: 3px;font-size: 1.1rem; line-height: 1.5; padding: 0.75rem 1rem; height: 43px;">
+                <div class="form-check form-check-custom form-check-solid form-check-sm" style="float: left; width: 100px;">
+                    <input type="radio" id="Sex1" name="Sex" class="form-check-input" value="1">
+                    <label class="form-check-label" for="Sex1">Radio1</label>
+                </div>
+                <div class="form-check form-check-custom form-check-solid form-check-sm" style="float: left; width: 100px;">
+                    <input type="radio" id="Sex2" name="Sex" class="form-check-input" value="2">
+                    <label class="form-check-label" for="Sex2">Radio2</label>
+                </div>
+                <label class="form-label" for="EmailCompany" style="top: -10px;font-size: 0.875rem;">Title</label>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="">
+        <div class="">
+            <ul class="nav" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_61322800b6a8c" role="tab">JAVASCRIPT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_61322800b6a93" role="tab">HTML</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="kt_highlight_61322800b6a8c" role="tabpanel">
+                    <div class="highlight-code">
+                        <div class="card card-bordered">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <textarea id="kt_clipboard_1" class="form-control m-3 h-250px"> 
+         // Set    
+         $(function() {
+              $("#check1").attr('checked',true);
+          });
+         //Get
+         var data=parseInt($('input[name=check]:checked').val());
+</textarea>
+
+                                    <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_1">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="kt_highlight_61322800b6a93" role="tabpanel">
+                    <div class="highlight-code">
+                        <div class="card card-bordered">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <textarea id="kt_clipboard_2" class="form-control m-3 h-400px"> &lt;div class="card-body pt-2">
+        &lt;div class="col-lg-12 form-control-floating card w-250px">
+            &lt;div class="col-form-label " style="border: 1px solid #e4e6ef;border-radius: 3px;font-size: 1.1rem; line-height: 1.5; padding: 0.75rem 1rem; height: 43px;">
+                &lt;div class="form-check form-check-custom form-check-solid form-check-sm" style="float: left; width: 100px;">
+                    &lt;input type="radio" id="check1" name="check" class="form-check-input" value="1">
+                    &lt;label class="form-check-label" for="check1">1&lt;/label>
+                &lt;/div>
+                &lt;div class="form-check form-check-custom form-check-solid form-check-sm" style="float: left; width: 100px;">
+                    &lt;input type="radio" id="check2" name="check" class="form-check-input" value="2">
+                    &lt;label class="form-check-label" for="check2">2&lt;/label>
+                &lt;/div>
+                &lt;label class="form-label" for="" style="top: -10px;font-size: 0.875rem;">Title&lt;/label>
+            &lt;/div>
+        &lt;/div>
+ &lt;/div>  </textarea>
+                                    <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_1">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        ClipBroardId("kt_clipboard_1");
+        ClipBroardId("kt_clipboard_2");
+    </script>
+</div>
+
+
+<div class="card card-xl-stretch mb-xl-8">
+    <!--begin::Header-->
+    <div class="card-header border-0">
+        <h3 class="card-title fw-bolder text-dark">Check panel</h3>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <!--end::Header-->
+    <!--begin::Body-->
+    <div class="card-body pt-2">
+        <div class="row">
+            <label class="fs-6 fw-bold mb-2">Title <span class="text-danger">*</span></label>
+            <div class="d-flex gap-9 mb-7" id="ActiveType">
+                <button type="button" onclick="ActiveType(this,1)" id="Type1" class="btn btn-outline btn-outline-dashed btn-outline-default w-180px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Panel
+                </button>
+                <button type="button" onclick="ActiveType(this,2)" id="Type2" class="btn btn-outline btn-outline-dashed btn-outline-default w-180px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Pane2
+                </button>
+                <button type="button" onclick="ActiveType(this,3)" id="Type3" class="btn btn-outline btn-outline-dashed btn-outline-default w-200px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Panel3
+                </button>
+                <button type="button" onclick="ActiveType(this,4)" id="Type4" class="btn btn-outline btn-outline-dashed btn-outline-default w-200px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Panel4
+                </button>
+                <input type="hidden" id="Type" value="" />
+                <script type="text/javascript">
+                    function ActiveType(id, value) {
+                        $("#Type").val(value);
+                        $("#ActiveType button").removeClass("active");
+                        $(id).addClass("active");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <!--end::Body-->
+    <div class="">
+        <div class="">
+            <ul class="nav" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_5" role="tab">JAVASCRIPT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6" role="tab">HTML</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="kt_highlight_5" role="tabpanel">
+                    <div class="highlight-code">
+                        <div class="card card-bordered">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <textarea id="kt_clipboard_5" class="form-control m-3 h-300px"> 
+          // Set    
+         function ActiveType(id, value) {
+             $("#Type").val(value);
+             $("#ActiveType button").removeClass("active");
+             $(id).addClass("active");
+            }
+         //Get
+         var data=  $("#Type").val();
+</textarea>
+
+                                    <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_5">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="kt_highlight_6" role="tabpanel">
+                    <div class="highlight-code">
+                        <div class="card card-bordered">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <textarea id="kt_clipboard_6" class="form-control m-3 h-500px">  &lt;div class="row">
+            &lt;label class="fs-6 fw-bold mb-2">Title &lt;span class="text-danger">*&lt;/span>&lt;/label>
+            &lt;div class="d-flex gap-9 mb-7" id="ActiveType">
+                &lt;button type="button" onclick="ActiveType(this,1)" id="Type1" class="btn btn-outline btn-outline-dashed btn-outline-default w-180px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Panel
+                &lt;/button>
+                &lt;button type="button" onclick="ActiveType(this,2)" id="Type2" class="btn btn-outline btn-outline-dashed btn-outline-default w-180px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Pane2
+                &lt;/button>
+                &lt;button type="button" onclick="ActiveType(this,3)" id="Type3" class="btn btn-outline btn-outline-dashed btn-outline-default w-200px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Panel3
+                &lt;/button>
+                &lt;button type="button" onclick="ActiveType(this,4)" id="Type4" class="btn btn-outline btn-outline-dashed btn-outline-default w-200px" data-bs-toggle="tooltip" data-bs-html="true" title="tooltip1">
+                    Panel4
+                &lt;/button>
+                &lt;input type="hidden" id="Type" value="" />
+
+            &lt;/div>
+        &lt;/div> </textarea>
+                                    <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_6">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        ClipBroardId("kt_clipboard_5");
+        ClipBroardId("kt_clipboard_6");
+    </script>
+</div>
+
+<div class="card card-xl-stretch mb-xl-8">
+    <!--begin::Header-->
+    <div class="card-header border-0">
+        <h3 class="card-title fw-bolder text-dark">Switch</h3>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <!--end::Header-->
+    <!--begin::Body-->
+    <div class="card-body pt-2 w-80px">
+        <div class="">
+            <div class="w-80px">
+                Switch
+            </div>
+            <label class="form-check form-switch form-check-custom form-check-solid">
+                <input class="form-check-input" id="Switch" type="checkbox">
+            </label>
+        </div>
+    </div>
+    <!--end::Body-->
+    <div class="">
+        <div class="">
+            <ul class="nav" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_3" role="tab">JAVASCRIPT</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_4" role="tab">HTML</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="kt_highlight_3" role="tabpanel">
+                    <div class="highlight-code">
+                        <div class="card card-bordered">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <textarea id="kt_clipboard_3" class="form-control m-3 h-250px"> 
+         // Set    
+         $(function() {
+              $("#Switch").prop('checked',true);
+          });
+         //Get
+         var data= $("#Switch").is(":checked");
+</textarea>
+
+                                    <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_3">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="kt_highlight_4" role="tabpanel">
+                    <div class="highlight-code">
+                        <div class="card card-bordered">
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <textarea id="kt_clipboard_4" class="form-control m-3 h-250px">  &lt;div class="">
+            &lt;div class="w-80px">
+                Switch
+            &lt;/div>
+            &lt;label class="form-check form-switch form-check-custom form-check-solid">
+                &lt;input class="form-check-input" id="Switch" type="checkbox">
+            &lt;/label>
+        &lt;/div> </textarea>
+                                    <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_4">
+                                        Copy
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        ClipBroardId("kt_clipboard_3");
+        ClipBroardId("kt_clipboard_4");
+    </script>
+</div>

@@ -1,0 +1,242 @@
+﻿<div class="card card-xl-stretch mb-xl-8">
+    <!--begin::Header-->
+    <div class="card-header border-0">
+        <h3 class="card-title fw-bolder text-dark">Input</h3>
+        <div class="card-toolbar">
+        </div>
+    </div>
+    <!--end::Header-->
+    <!--begin::Body-->
+    <div class="card-body pt-2">
+        @*  bắt buộc nhập*@
+        <div class="row mb-4">
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <div class="col-lg-12 form-control form-control-floating card">
+                        <input placeholder="none" type="text" class="form-input" id="TextInput" value="@(Model?.TextInput)">
+                        <label class="form-label" for="TextInput">Title<span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_5" role="tab">JAVASCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6" role="tab">HTML</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="kt_highlight_5" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_5" class="form-control m-3 h-150px"> 
+         //Get
+         var data=  $("#TextInput").val();
+</textarea>
+
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_5">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="kt_highlight_6" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_6" class="form-control m-3 h-300px">   &lt;div class="row mb-4">
+            &lt;div class="col-lg-12">
+                &lt;div class="form-group row">
+                    &lt;div class="col-lg-12 form-control form-control-floating card">
+                        &lt;input placeholder="none" type="text" class="form-input" id="TextInput" value="">
+                        &lt;label class="form-label" for="TextInput">Title&lt;span class="text-danger">*&lt;/span>&lt;/label>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div> </textarea>
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_6">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            ClipBroardId("kt_clipboard_5");
+            ClipBroardId("kt_clipboard_6");
+        </script>
+        <br />
+
+
+        <div class="card-header border-0">
+            <h3 class="card-title fw-bolder text-dark">Input Multiline</h3>
+            <div class="card-toolbar">
+            </div>
+        </div>
+        @* Nhiều dòng*@
+        <div class="row mb-4">
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <div class="col-lg-12 form-control form-control-floating card">
+                        <textarea placeholder="none" class="form-input" type="text" rows="3" id="TextInput" style="height: 100px">@Html.Raw(Model?.TextInput)</textarea>
+                        <label class="form-label" for="TextInput">Title<span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_4" role="tab">JAVASCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_3" role="tab">HTML</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="kt_highlight_4" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_4" class="form-control m-3 h-150px"> 
+         //Get
+         var data=  $("#TextInput").val();
+</textarea>
+
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_4">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="kt_highlight_3" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_3" class="form-control m-3 h-300px">    &lt;div class="row mb-4">
+            &lt;div class="col-lg-12">
+                &lt;div class="form-group row">
+                    &lt;div class="col-lg-12 form-control form-control-floating card">
+                        &lt;textarea placeholder="none" class="form-input" type="text" rows="3" id="TextInput" style="height: 100px">@Html.Raw(Model?.TextInput)&lt;/textarea>
+                        &lt;label class="form-label" for="TextInput">Title&lt;span class="text-danger">*&lt;/span>&lt;/label>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div> </textarea>
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_3">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            ClipBroardId("kt_clipboard_4");
+            ClipBroardId("kt_clipboard_3");
+        </script>
+        <br />
+        
+        <div class="card-header border-0">
+            <h3 class="card-title fw-bolder text-dark">Input Number</h3>
+            <div class="card-toolbar">
+            </div>
+        </div>
+        @*number*@
+        <div class="row mb-4">
+            <div class="col-lg-12">
+                <div class="form-group row">
+                    <div class="col-lg-12 form-control form-control-floating card">
+                        <input type="number" placeholder="none" class="form-input" id="number" value="1">
+                        <label class="form-label" for="TextInput">Number<span class="text-danger">*</span></label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_2" role="tab">JAVASCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_1" role="tab">HTML</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="kt_highlight_2" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_2" class="form-control m-3 h-150px"> 
+         //Get
+         var data= $("#number").val();
+</textarea>
+
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_2">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="kt_highlight_1" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_1" class="form-control m-3 h-300px">   &lt;div class="row mb-4">
+            &lt;div class="col-lg-12">
+                &lt;div class="form-group row">
+                    &lt;div class="col-lg-12 form-control form-control-floating card">
+                        &lt;input type="number" placeholder="none" class="form-input" id="number" value="1">
+                        &lt;label class="form-label" for="TextInput">Number&lt;span class="text-danger">*&lt;/span>&lt;/label>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div> </textarea>
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_1">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            ClipBroardId("kt_clipboard_2");
+            ClipBroardId("kt_clipboard_1");
+        </script>
+    </div>
+    <!--end::Body-->
+</div>
+
+
+
+

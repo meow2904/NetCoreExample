@@ -1,0 +1,177 @@
+﻿@model PagedResult<FormDemoViewModel>
+@{
+    ViewData["Title"] = "Form Code Demo";
+}
+<div class="toolbar d-flex flex-stack flex-wrap ms-5 mb-5 mb-lg-5" id="kt_toolbar">
+    <div class="page-title d-flex flex-column py-1">
+        <h1 class="d-flex align-items-center my-1">
+            <span class="text-dark fw-bolder fs-1">@ViewData["Title"]</span>
+        </h1>
+    </div>
+</div>
+<div class="card">
+    <div class="card-header">
+        <div class="card-title">
+            <div class="d-flex align-items-center position-relative my-1">
+                <span class="svg-icon svg-icon-1 position-absolute ms-6">
+                    <i class="las la-search fs-1"></i>
+                </span>
+                <input type="text" id="txtSearch" class="form-control form-control-solid w-350px ps-15" placeholder="Tìm kiếm ..." value="@Html.Raw(ViewData["Search"])">
+            </div>
+        </div>
+        <div class="card-toolbar">
+            <div class="d-flex justify-content-end">
+                <a class="btn btn-active-uni btn-uni w-200px me-3" href="/FormDemo/AddOrUpdate">
+                    <span>
+                        <i class="las la-plus-circle fs-1 text-white"></i>
+                    </span>
+                    Thêm mới (Page)
+                </a>
+                <button type="button" class="btn btn-active-uni btn-uni w-200px" onclick="AddModal()">
+                    <span>
+                        <i class="las la-plus-circle fs-1 text-white"></i>
+                    </span>
+                    Thêm mới (Modal)
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="card-body py-3">
+        <div class="table-responsive">
+            <table class="table table-row-dashed table-row-gray-300 align-middle gs-0">
+                <thead>
+                    <tr class="fw-bolder text-uni">
+                        <th class="w-120px text-center">No.</th>
+                        <th>Name</th>
+                        <th class="w-120px">Chức năng</th>
+                        <th class="w-50px">Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.PageCount == 0)
+                    {
+                        <tr>
+                            <td colspan="4">
+                                Không có bản ghi nào
+                            </td>
+                        </tr>
+                    }
+                    else
+                    {
+                        foreach (var obj in Model.Results)
+                        {
+                            <tr>
+                                <td class="w-120px text-center">
+                                    @obj.FormDemoId
+                                </td>
+                                <td>
+                                    <div class="gg-ce">
+                                        @obj.Name
+                                    </div>
+                                </td>
+                                <td class="">
+                                    <a href="/FormDemo/AddOrUpdate?formDemoId=@obj.FormDemoId" class="btn btn-icon btn-bg-white btn-active-color-primary btn-sm" data-bs-toggle="tooltip" data-placement="top" title="Sửa trên page mới">
+                                        <i class="las la-pen-nib fs-1"></i>
+                                    </a>
+                                    <a href="javascript:Delete(@obj.FormDemoId)" class="btn btn-icon btn-bg-white btn-active-color-primary btn-sm" data-bs-toggle="tooltip" data-placement="top" title="Xóa">
+                                        <i class="las la-trash fs-1"></i>
+                                    </a>
+                                </td>
+                                <td>
+                                    <div class="symbol symbol-35px symbol-circle" data-bs-toggle="tooltip" title="" data-bs-original-title="@obj.AppUserViewModel?.UserName" onclick="window.location.href='/Profile/@obj.AppUserViewModel?.UserName'">
+                                        <img alt="Pic" src="@obj.AppUserViewModel?.Avatar" style="overflow:hidden; border-radius:100px">
+
+                                    </div>
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            @(await Component.InvokeAsync("Pager", Model))
+        </div>
+    </div>
+</div>
+<div class="modal fade modal-select2" id="FormOpen" data-bs-backdrop="static" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mw-600px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="span-header" id="DepartmentLabel"><img src="/images/logo.png" style="width: 50px"> Thêm mới phòng ban</span>
+                <div class="btn btn-sm btn-icon" data-bs-dismiss="modal">
+                    <span class="icon">
+                        <i class="las la-times fs-1 text-white"></i>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-body py-lg-10">
+                <div class="w-100">
+                    <div class="row mb-3">
+                        <div class="col-lg-12 mb-3">
+                            <div class="form-group row">
+                                <div class="col-lg-12 form-control form-control-floating card">
+                                    <input placeholder="none" type="text" class="form-input" id="DepartmentName">
+                                    <input type="hidden" id="DepartmentId" value="0">
+                                    <label class="form-label" for="DepartmentName">Tên phòng ban<span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group row">
+                                <div class="form-control form-control-floating card">
+                                    <select placeholder="none" class="form-input form-select" data-control="select2" data-placeholder="Chọn" id="SelectApi" data-dropdown-parent="#FormOpen">
+                                        <option value=""></option>
+                                    </select>
+                                    <label class="form-label" for="SelectApi">Thuộc khối<span class="text-danger">*</span></label>
+                                </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            $(function() {
+                                LoadCombobox("SelectApi", "/Api/FormDemo/SelectData", true, true, undefined, undefined, window.objAjax, "FormDemoId", "Name");
+                            });
+                            //Get
+                            $("#Select").val();
+                        </script>
+                    </div>
+                </div>
+                <div style="text-align:right">
+                    <button type="reset" class="btn btn-light me-3 w-120px" data-bs-dismiss="modal">Hủy</button>
+                    <button type="button" class="btn btn btn-active-uni btn-uni w-120px" onclick="Save()">
+                        Lưu lại
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function Search() {
+        var dataSearch = {
+            page: 1,
+            search: $("#txtSearch").val()
+        };
+        var url = "";
+        if (dataSearch.page >= 1) url += window.location.pathname + "?page=1";
+        if (dataSearch.search !== "") url += "&search=" + dataSearch.search;
+        url = decodeURI(url);
+        window.location.href = url;
+    }
+
+    function AddModal() {
+        $("#TempId").val(0).change();
+        $('#FormOpen').modal('show');
+    }
+    
+    function Delete(tempId) {
+        SwalConfirm("Bạn có chắc muốn xóa thông tin này không?",
+            function() {
+                window.objAjax.isFuntConfirm = true;
+                AjaxDeleteAsync("/Api/FormDemo/Remove/" + tempId, window.objAjax,
+                    function() {
+                        window.location.reload();
+                    });
+            }, "", "500", "question", "Xác nhận");
+    }
+</script>

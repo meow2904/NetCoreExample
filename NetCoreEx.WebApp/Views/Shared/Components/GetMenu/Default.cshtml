@@ -1,0 +1,159 @@
+﻿@using NetCoreEx.WebApp.Extensions
+<div id="kt_header" class="header align-items-stretch">
+    <div class="container-xxl d-flex align-items-stretch justify-content-between">
+        <div class="d-flex align-items-center flex-grow-1 flex-lg-grow-0 w-lg-225px me-5 py-2 px-2 px-md-3">
+            <div class="btn btn-icon btn-active-icon-primary ms-n2 me-2 d-flex d-lg-none" id="kt_aside_toggle">
+                <span class="svg-icon svg-icon-1">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="black" />
+                        <path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="black" />
+                    </svg>
+                </span>
+            </div>
+            <a href="">
+                <img alt="Logo" src="~/images/logo.png" class="d-none d-lg-inline h-60px" />
+                <img alt="Logo" src="~/images/logo.png" class="d-lg-none h-50px" />
+            </a>
+        </div>
+        <div class="d-flex align-items-stretch justify-content-between flex-lg-grow-1">
+            <div class="d-flex align-items-stretch" id="kt_header_nav">
+                <div class="header-menu align-items-stretch" data-kt-drawer="true" data-kt-drawer-name="header-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="{default:'200px', '300px': '250px'}" data-kt-drawer-direction="end" data-kt-drawer-toggle="#kt_header_menu_mobile_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav'}">
+                    <div class="menu menu-lg-rounded menu-column menu-lg-row menu-state-bg menu-title-gray-700 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-400 fw-bold my-5 my-lg-0 align-items-stretch" id="#kt_header_menu" data-kt-menu="true">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-stretch flex-shrink-0">
+                <div class="d-flex align-items-stretch flex-shrink-0">
+                    @* Thông báo*@
+                    <div class="d-flex align-items-center ms-1 ms-lg-2 me-3">
+                        <div class="btn btn-icon btn-active-light-primary position-relative w-50px h-30px w-md-40px h-md-40px" data-kt-menu-trigger="click" id="showbutton" onclick="" data-kt-menu-placement="bottom-start">
+                            <span class="svg-icon svg-icon-1">
+                                <svg style="color: white !important" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                            </span>
+                            <span class="badge badge-success float-right" style="margin-top: -26px; margin-left: -12px;" id="notificationNumber"></span>
+                        </div>
+                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-0px "
+                             data-kt-menu="true">
+                            <div class="menu menu-sub menu-sub-dropdown menu-column w-350px w-lg-375px show" id="showmenu" data-kt-menu="true" style="z-index:150; position: fixed; inset: 0px auto auto 0px; margin: 0px; " data-popper-placement="bottom-end">
+                                <div class="d-flex flex-column bgi-no-repeat rounded-top" style="background-image:url('assets/media/misc/pattern-1.jpg')">
+                                    <h3 class="text-white fw-bold px-5 mt-10 mb-6 ">
+                                        <i class="las la-bell fs-1 text-white"></i>  Thông báo !
+                                        <span class="fs-8 opacity-75 ps-3"></span>
+                                    </h3>
+                                </div>
+                                <div class="tab-content" style="background-color:white">
+                                    <div class="tab-pane fade active show" id="kt_topbar_notifications_1" role="tabpanel">
+                                        <div class="scroll-y mh-325px mw-370px px-5 my-4" id="Item">
+                                            @*Item*@
+                                        </div>
+                                        <div class="py-3 text-center border-top">
+                                            <a href="/thong-bao" class="btn btn-color-gray-600 btn-active-color-primary">
+                                                Xem tất cả ...
+                                                <span class="svg-icon svg-icon-5">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                                        <rect opacity="0.5" x="18" y="13" width="13" height="2" rx="1" transform="rotate(-180 18 13)" fill="black"></rect>
+                                                        <path d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z" fill="black"></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center ms-lg-5" id="kt_header_user_menu_toggle">
+                        <div class="btn d-flex align-items-center py-2 px-2 px-md-3" data-kt-menu-trigger="click" data-kt-menu-attach="parent" data-kt-menu-placement="bottom-end">
+                            <div class="d-none d-md-flex flex-column align-items-end justify-content-center me-2">
+                                <span class="text-white fs-7 fw-bold lh-1 mb-2">@(User.Identity?.Name)</span>
+                            </div>
+                            <div class="symbol symbol-30px symbol-md-40px">
+                                @if (User.Identity?.GetAvatar() == "")
+                                {
+                                    <img src="~/images/avatar.png" alt="image" style="border-radius:100px" />
+                                }
+                                else
+                                {
+                                    <img src="@(User.Identity?.GetAvatar())" alt="image" />
+                                }
+                            </div>
+                        </div>
+                        <div class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-800 menu-state-bg menu-state-primary fw-bold py-4 fs-6 w-275px" data-kt-menu="true">
+                            <div class="menu-item px-3">
+                                <div class="menu-content d-flex align-items-center px-3">
+                                    <div class="symbol symbol-50px me-5">
+                                        @if (User.Identity?.GetAvatar() == "")
+                                        {
+                                            <img src="~/images/avatar.png" alt="image" style="border-radius:100px" />
+                                        }
+                                        else
+                                        {
+                                            <img alt="Logo" src="@(User.Identity?.GetAvatar())" style="border-radius:100px" />
+                                        }
+
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <div class="fw-bolder d-flex align-items-center fs-5">
+                                            <span class="badge badge-light-success fw-bolder fs-8 px-2 py-1 ms-2">@(User.Identity?.Name)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="separator my-2"></div>
+                            <div class="menu-item px-5">
+                                <a href="/Profile/@(User.Identity?.Name)" class="menu-link px-5">Hồ sơ của bạn</a>
+                            </div>
+                            <div class="menu-item px-5">
+                                <a href="javascript:GoToHistory()" class="menu-link px-5">Lịch sử của bạn</a>
+                            </div>
+                            <div class="menu-item px-5">
+                                <a href="/change-password" class="menu-link px-5">Đổi mật khẩu</a>
+                            </div>
+                            <div class="separator my-2"></div>
+                            <div class="menu-item px-5">
+                                <a href="javascript:LogOut()" class="menu-link px-5">Đăng xuất</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function() {
+        console.log(typeof ('@(User.Identity?.GetAvatar())'));
+    })
+    function LoadDataModal() {
+        $('#Item').empty();
+        var htmlItem1 = '';
+        AjaxGetAsync("/Api/Notification/ListNotification", window.objAjax, function(result) {
+            var kq = JSON.parse(result).Results
+            for (var i = 0; i < JSON.parse(result).Results.length; i++) {
+                var hour = GetTimeDiff(kq[i].DateStart);
+                console.log(kq[i].EmployeeViewModel.Avatar);
+                var avatar = kq[i].EmployeeViewModel.Avatar == undefined ? "/avatar/AvatarDF.png" : kq[i].EmployeeViewModel.Avatar;
+                htmlItem1 += '<button class="d-flex flex-stack py-4 w-300px"  style="border: none; background: none; outline:none ; "  id="' + kq[i].NotificationId + '" name="' + kq[i].SourceUrl + '"> <a href="' + kq[i].SourceUrl + '"> <div class="d-flex align-items-center" <div class="symbol symbol-35px me-4"> <span class="symbol-label bg-light-primary" >  <img alt="' + kq[i].UserName + '" src="' + avatar + '" alt="" width="35px" height="35px" style="border-radius: 100px;overflow: hidden" />  </span>   </div>   <div class="mb-0 me-2">    <a href="' + kq[i].SourceUrl + '" class="fs-7 text-gray-700" > ' + kq[i].Content + '</a>   </div>  <span class="badge badge-light fs-8" id="thoiGian">' + hour + ' </span> </a> </button>';
+            }
+            $('#Item').html(htmlItem1);
+            for (var i = 0; i < JSON.parse(result).Results.length; i++) {
+                if (kq[i].Status == 4) {
+                    $('#' + kq[i].NotificationId + '').attr("style", "border: none; background: none; outline:none ; opacity:0.5");
+                }
+                if (kq[i].Status == 1) {
+                    $('#' + kq[i].NotificationId + '').click(function() {
+                        var notificationID = $(this).attr("id")
+                        window.objAjax.parameters = {};
+                        window.objAjax.isFuntConfirm = true;
+                        window.objAjax.divLoading = "body";
+                        AjaxPostAsync("/Api/Notification/UpdateStatus/" + notificationID, window.objAjax);
+                        window.location.href = $(this).attr("name");
+                    });
+                }
+            }
+        })
+    };
+
+
+
+</script>

@@ -1,0 +1,353 @@
+﻿<div>
+    <h1>File</h1>
+</div>
+<div class="d-flex justify-content-end" data-kt-filemanager-table-toolbar="base">
+    <button type="button" class="btn btn-light-primary me-3" id="kt_file_manager_new_folder">
+
+        <span class="svg-icon svg-icon-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M10 4H21C21.6 4 22 4.4 22 5V7H10V4Z" fill="currentColor"></path>
+                <path d="M10.4 3.60001L12 6H21C21.6 6 22 6.4 22 7V19C22 19.6 21.6 20 21 20H3C2.4 20 2 19.6 2 19V4C2 3.4 2.4 3 3 3H9.2C9.7 3 10.2 3.20001 10.4 3.60001ZM16 12H13V9C13 8.4 12.6 8 12 8C11.4 8 11 8.4 11 9V12H8C7.4 12 7 12.4 7 13C7 13.6 7.4 14 8 14H11V17C11 17.6 11.4 18 12 18C12.6 18 13 17.6 13 17V14H16C16.6 14 17 13.6 17 13C17 12.4 16.6 12 16 12Z" fill="currentColor"></path>
+                <path opacity="0.3" d="M11 14H8C7.4 14 7 13.6 7 13C7 12.4 7.4 12 8 12H11V14ZM16 12H13V14H16C16.6 14 17 13.6 17 13C17 12.4 16.6 12 16 12Z" fill="currentColor"></path>
+            </svg>
+        </span>
+        New Folder
+    </button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_upload">
+        <span class="svg-icon svg-icon-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M10 4H21C21.6 4 22 4.4 22 5V7H10V4Z" fill="currentColor"></path>
+                <path d="M10.4 3.60001L12 6H21C21.6 6 22 6.4 22 7V19C22 19.6 21.6 20 21 20H3C2.4 20 2 19.6 2 19V4C2 3.4 2.4 3 3 3H9.20001C9.70001 3 10.2 3.20001 10.4 3.60001ZM16 11.6L12.7 8.29999C12.3 7.89999 11.7 7.89999 11.3 8.29999L8 11.6H11V17C11 17.6 11.4 18 12 18C12.6 18 13 17.6 13 17V11.6H16Z" fill="currentColor"></path>
+                <path opacity="0.3" d="M11 11.6V17C11 17.6 11.4 18 12 18C12.6 18 13 17.6 13 17V11.6H11Z" fill="currentColor"></path>
+            </svg>
+        </span>
+        Upload Files
+    </button>
+</div>
+<div class="">
+    <div class="">
+        <ul class="nav" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_2" role="tab">JAVASCRIPT</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_1" role="tab">HTML</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane fade show active" id="kt_highlight_2" role="tabpanel">
+                <div class="highlight-code">
+                    <div class="card card-bordered">
+                        <div class="card-body">
+                            <div class="input-group">
+                                <textarea id="kt_clipboard_2" class="form-control m-3 h-700px">
+         //Get
+        var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+        url: "https://keenthemes.com/scripts/void.php",
+        paramName: "file",
+        maxFiles: 10,
+        maxFilesize: 10, // MB
+        addRemoveLinks: true,
+        accept: function(file, done) {
+            if (file.name == "wow.jpg") {
+                done("Naha, you don't.");
+            } else {
+                done();
+            }
+        }
+        });
+        //save 
+        function Save() {
+        //if (!Validate()) return;
+        var myfile = myDropzone;
+        var formData = new FormData();
+        if (myfile.files.length > 0) {
+            for (var i = 0; i &lt; myfile.files.length; i++) {
+                formData.append('files', myfile.files[i]);
+            }
+        }
+
+        window.objAjax.parameters = formData;
+        console.log(window.objAjax.parameters);
+        window.objAjax.isFuntConfirm = true;
+        window.objAjax.divLoading = "body";
+        AjaxFile("/Api/FormDemo/UploadFile", window.objAjax,
+            function(data) {
+                console.log(data);
+                window.location.reload();
+            });
+         };
+
+</textarea>
+
+                                <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_2">
+                                    Copy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="kt_highlight_1" role="tabpanel">
+                <div class="highlight-code">
+                    <div class="card card-bordered">
+                        <div class="card-body">
+                            <div class="input-group">
+                                <textarea id="kt_clipboard_1" class="form-control m-3 h-600px">
+ <!-- button -->
+  &lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_upload">
+        &lt;span class="svg-icon svg-icon-2">
+            &lt;svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                &lt;path opacity="0.3" d="M10 4H21C21.6 4 22 4.4 22 5V7H10V4Z" fill="currentColor">&lt;/path>
+                &lt;path d="M10.4 3.60001L12 6H21C21.6 6 22 6.4 22 7V19C22 19.6 21.6 20 21 20H3C2.4 20 2 19.6 2 19V4C2 3.4 2.4 3 3 3H9.20001C9.70001 3 10.2 3.20001 10.4 3.60001ZM16 11.6L12.7 8.29999C12.3 7.89999 11.7 7.89999 11.3 8.29999L8 11.6H11V17C11 17.6 11.4 18 12 18C12.6 18 13 17.6 13 17V11.6H16Z" fill="currentColor">&lt;/path>
+                &lt;path opacity="0.3" d="M11 11.6V17C11 17.6 11.4 18 12 18C12.6 18 13 17.6 13 17V11.6H11Z" fill="currentColor">&lt;/path>
+            &lt;/svg>
+        &lt;/span>
+        Upload Files
+    &lt;/button>
+    <!-- modal -->
+&lt;div class="modal fade" id="kt_modal_upload" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    &lt;div class="modal-dialog modal-dialog-centered mw-650px ">
+        &lt;div class="modal-content">
+            &lt;form class="form p-5" action="#" method="post">
+                &lt;div class="fv-row">
+                    &lt;div class="dropzone" id="kt_dropzonejs_example_1">
+                        &lt;div class="dz-message needsclick">
+                            &lt;i class="bi bi-file-earmark-arrow-up text-primary fs-3x">&lt;/i>
+                            &lt;div class="ms-4">
+                                &lt;h3 class="fs-5 fw-bolder text-gray-900 mb-1">Drop files here or click to upload.&lt;/h3>
+                                &lt;span class="fs-7 fw-bold text-gray-400">Upload up to 10 files&lt;/span>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/form>
+            &lt;br />
+            &lt;div class="d-flex justify-content-end  px-1 w-650px mb-5 ">
+                &lt;button type="button" class="btn btn-light me-3 w-120px" data-bs-dismiss="modal">
+                    &lt;span class="indicator-label">Hủy&lt;/span>
+                &lt;/button>
+                &lt;button type="button" class="btn btn-primary me-5 w-120px" onclick="Save()">
+                    &lt;span class="indicator-label">Lưu lại&lt;/span>
+                    &lt;span class="indicator-progress load-progress">
+                        ...
+                        &lt;span class="spinner-border spinner-border-sm align-middle ms-2">&lt;/span>
+                    &lt;/span>
+                &lt;/button>
+            &lt;/div>
+
+        &lt;/div>
+    &lt;/div>
+&lt;/div> </textarea>
+                                <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_1">
+                                    Copy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form id="simpleuploadform" method="post" action="upload" enctype="multipart/form-data">
+        <table class="span10" border="0">
+            <tr>
+                <td colspan="3">
+                    <legend>Simple Upload</legend>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="file" name="files[]" multiple="multiple" onchange="getFileSizeandName(this);" />
+                    <div id="successdiv" hidden="hidden" class="label label-success">Image uploaded successfully</div>
+                    <div id="errordiv" hidden="hidden" class="label label-error">Image not successfully uploaded</div>
+                    <div id="streamdiv" hidden="hidden" class="label label-warning">Issue while uploading try again</div>
+                </td>
+                <td id="renameFile" align="right"></td>
+                <td id="removeFile" align="right"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <div id="uploaddiv">
+                        <table id="uploadTable" class="table table-striped table-bordered" width="200" height="200" scrolling="yes">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Size</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodyid">
+                                <tr id="tr0">
+                                    <td id="filetd0" height="10px" width="50px"></td>
+                                    <td id="filesizetd0" height="10px" width="5px"></td>
+                                </tr>
+                                <tr id="tr1">
+                                    <td id="filetd1" height="10px" width="50px"></td>
+                                    <td id="filesizetd1" height="10px" width="5px"></td>
+                                </tr>
+                                <tr id="tr2">
+                                    <td id="filetd2" height="10px" width="50px"></td>
+                                    <td id="filesizetd2" height="10px" width="5px"></td>
+                                </tr>
+                                <tr id="tr3">
+                                    <td id="filetd3" height="10px" width="50px"></td>
+                                    <td id="filesizetd3" height="10px" width="5px"></td>
+                                </tr>
+                                <tr id="tr4">
+                                    <td id="filetd4" height="10px" width="50px"></td>
+                                    <td id="filesizetd4" height="10px" width="5px"></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td id="filecount" height="10px" width="50px"></td>
+                                    <td id="totalsize" height="10px" width="5px"></td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <input type="submit" class="btn btn-primary" onClick="CloseAndRefresh();" value="Start Upload" id="startButton" disabled>
+                    <input type="reset" class="btn btn-primary" onClick="Clear();" value="Clear" id="clearButton" disabled>
+                    <input type="button" class="btn" onClick="window.close();" value="Close">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+<script>
+
+    ClipBroardId("kt_clipboard_2");
+    ClipBroardId("kt_clipboard_1");
+
+
+    var totalsizeOfUploadFiles = 0;
+    function getFileSizeandName(input) {
+        var select = $('#uploadTable tbody');
+        $('#renameFile').empty(); $('#removeFile').empty();
+
+        if (input.files.length > 0) {
+            $('#renameFile').append($('<a id="renameRec">Rename Selected</a>'));
+            $('#removeFile').append($('<a id="removeRec">Remove Selected</a>'));
+            $('#startButton').removeAttr("disabled", "disabled");
+            $('#clearButton').removeAttr("disabled", "disabled");
+        }
+        //if(input.files.length <= 5)
+        //{
+        for (var i = 0; i < input.files.length; i++) {
+            var filesizeInBytes = input.files[i].size;
+            var filesizeInMB = (filesizeInBytes / (1024 * 1024)).toFixed(2);
+            var filename = input.files[i].name;
+            //alert("File name is : "+filename+" || size : "+filesizeInMB+" MB || size : "+filesizeInBytes+" Bytes");
+
+            if (i <= 4) {
+                $('#filetd' + i + '').text(filename);
+                $('#filesizetd' + i + '').text(filesizeInMB);
+            }
+            else if (i > 4)
+                select.append($('<tr id=tr' + i + '><td id=filetd' + i + '>' + filename + '</td><td id=filesizetd' + i + '>' + filesizeInMB + '</td></tr>'));
+
+            totalsizeOfUploadFiles += parseFloat(filesizeInMB);
+            $('#totalsize').text(totalsizeOfUploadFiles.toFixed(2) + " MB");
+            if (i == 0)
+                $('#filecount').text("1file");
+            else {
+                var no = parseInt(i) + 1;
+                $('#filecount').text(no + "files");
+            }
+        }
+        //}
+    }
+
+    function CloseAndRefresh() {
+        var daa = '<%=status%>';
+        if (daa == "true")
+            $('#successdiv').show();
+        else if (daa == "false")
+            $('#errordiv').show();
+        else
+            $('#streamdiv').show();
+        opener.location.reload(true);
+        self.close();
+    }
+
+    function Clear() {
+        $('#uploadTable tbody tr td').each(function() {
+            $(this).text("");
+        });
+        $('#uploadTable tfoot tr td').each(function() {
+            $(this).text("");
+        });
+    }
+</script>
+<div class="modal fade" id="kt_modal_upload" tabindex="-1" aria-modal="true" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered mw-650px ">
+        <div class="modal-content">
+            <form class="form p-5" action="#" method="post">
+                <div class="fv-row">
+                    <div class="dropzone" id="kt_dropzonejs_example_1">
+                        <div class="dz-message needsclick">
+                            <i class="bi bi-file-earmark-arrow-up text-primary fs-3x"></i>
+                            <div class="ms-4">
+                                <h3 class="fs-5 fw-bolder text-gray-900 mb-1">Drop files here or click to upload.</h3>
+                                <span class="fs-7 fw-bold text-gray-400">Upload up to 10 files</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <br />
+            <div class="d-flex justify-content-end  px-1 w-650px mb-5 ">
+                <button type="button" class="btn btn-light me-3 w-120px" data-bs-dismiss="modal">
+                    <span class="indicator-label">Hủy</span>
+                </button>
+                <button type="button" class="btn btn-primary me-5 w-120px" onclick="Save()">
+                    <span class="indicator-label">Lưu lại</span>
+                    <span class="indicator-progress load-progress">
+                        ...
+                        <span class="spinner-border spinner-border-sm align-middle ms-2"></span>
+                    </span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+        url: "https://keenthemes.com/scripts/void.php",
+        paramName: "file",
+        maxFiles: 10,
+        maxFilesize: 10, // MB
+        addRemoveLinks: true,
+        accept: function(file, done) {
+            if (file.name == "wow.jpg") {
+                done("Naha, you don't.");
+            } else {
+                done();
+            }
+        }
+    });
+    function Save() {
+        //if (!Validate()) return;
+        var myfile = myDropzone;
+        var formData = new FormData();
+        if (myfile.files.length > 0) {
+            for (var i = 0; i < myfile.files.length; i++) {
+                formData.append('files', myfile.files[i]);
+            }
+        }
+        window.objAjax.parameters = formData;
+        console.log(window.objAjax.parameters);
+        window.objAjax.isFuntConfirm = true;
+        window.objAjax.divLoading = "body";
+        AjaxFile("/Api/FormDemo/UploadFile", window.objAjax,
+            function(data) {
+                console.log(data);
+                window.location.reload();
+            });
+    };
+</script>

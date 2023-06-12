@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>@ViewData["Title"] - U&I Logistics Corporation</title>
+    <meta name="description" content="Provide logistics solutions that meet the demand of every client" />
+    <meta name="keywords" content="Binh Duong, Nam Tan Uyen, Customs brokerage, Inland trucking, VTruck, International freight" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta property="og:locale" content="vi_VN" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="@ViewData["Title"] - U&I Logistics Corporation" />
+    <meta property="og:url" content="https://hrm.unilogistics.vn/" />
+    <meta property="og:site_name" content="U&I Logistics Corporation" />
+    <link rel="canonical" href="https://hrm.unilogistics.vn/" />
+    <link href="~/assets-result/1.0/css/plugins.bundle.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <link href="~/assets-result/1.0/css/style.bundle.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <link href="~/css/jquery.loading.min.css" asp-append-version="true" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        var objAjax = {
+            parameters: undefined,
+            isFuntConfirm: false,
+            isPageAdmin: true,
+            divLoading: undefined
+        }
+    </script>
+</head>
+<body id="kt_body" class="bg-body">
+    <div class="d-flex flex-column flex-root">
+        <div class="d-flex flex-column flex-xl-row flex-column-fluid">
+            <div class="d-flex flex-column flex-lg-row-fluid text-center">
+                <div class="d-flex flex-row-fluid flex-center p-10">
+                    <div class="d-flex flex-column">
+                        <a href="javascript:void(0)" class="mb-15">
+                            <img alt="Logo" src="/images/logo_unilogistics.svg" class="h-100px" />
+                        </a>
+                        <h1 class="text-dark fs-2x mb-3">Hệ thống Code Mẫu</h1>
+                        <h1 class="text-dark mb-3 d-none d-sm-block">Công ty cổ phần Logistics U&I</h1>
+                    </div>
+                </div>
+                <div class="d-none d-sm-block d-flex flex-row-auto flex-center bgi-no-repeat bgi-position-x-center bgi-size-contain bgi-position-y-bottom min-h-200px min-h-xl-450px mb-xl-10" style="background-image: url('/images/15.png')"></div>
+            </div>
+            <div class="flex-row-fluid d-flex flex-center justfiy-content-xl-first p-10">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <script src="~/assets-result/1.0/js/plugins.bundle.min.js" asp-append-version="true"></script>
+    <script src="~/assets-result/1.0/js/scripts.bundle.min.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.13/l10n/vn.min.js" asp-append-version="true"></script>
+    <link href="~/assets-result/1.0/css/_layout.min.css" rel="stylesheet" type="text/css" asp-append-version="true" />
+    <script src="~/js/jquery.loading.min.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/jquery.repeater.js" asp-append-version="true"></script>
+    <script src="~/js/Library-v2.0.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        //Đăng xuất hệ thống
+        function LogOut() {
+            window.objAjax.parameters = undefined;
+            window.objAjax.isFuntConfirm = true;
+            window.objAjax.divLoading = "body";
+            AjaxGetAsync("/Api/Employee/Logout", window.objAjax,
+                function(data) {
+                    window.location.href = "/Login";
+                });
+        }
+    </script>
+</body>
+</html>

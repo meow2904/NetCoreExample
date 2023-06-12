@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NetCoreEx.WebApp
+build_property.RootNamespace = NetCoreEx.WebApp
+build_property.ProjectDir = D:\Document\NetCore-master\NetCore-master\NetCoreEx.WebApp\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Document\NetCore-master\NetCore-master\NetCoreEx.WebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/AddOrUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cQWRkT3JVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/CheckBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cQ2hlY2tCb3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/ComboBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cQ29tYm9Cb3guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/Datetime.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cRGF0ZXRpbWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/File.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cRmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/Input.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cSW5wdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/FormDemo/Test.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybURlbW9cVGVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Home/Lockout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2Nrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Home/LoginRedirect.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpblJlZGlyZWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/Components/GetMenu/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0TWVudVxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/Components/GetSidebar/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcR2V0U2lkZWJhclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/Components/Pager/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUGFnZXJcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/Components/QuickLinks/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUXVpY2tMaW5rc1xEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6bsn86kr3x
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4hy0xr7o1p
+
+[D:/Document/NetCore-master/NetCore-master/NetCoreEx.WebApp/Views/Shared/_LayoutForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRGb3JtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-kv6z0jwpjb

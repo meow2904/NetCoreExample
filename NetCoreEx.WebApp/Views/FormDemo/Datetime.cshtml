@@ -1,0 +1,237 @@
+﻿<div class="card card-xl-stretch mb-xl-8">
+    <div class="card-body pt-2">
+        <div class="card-header border-0">
+            <h3 class="card-title fw-bolder text-dark">Date</h3>
+            <div class="card-toolbar">
+            </div>
+        </div>
+        <div class="col-lg-3 w-300px">
+            <div class="form-group row mb-4">
+                <div class="col-lg-12 form-control form-control-floating card">
+                    <input class="form-input input-date" id="Date" type="text" name="date" value="@(DateTime.Now.ConvertDateTimeToString())">
+                    <label class="form-label" for="Date">Date<span class="text-danger">*</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_2" role="tab">JAVASCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_1" role="tab">HTML</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="kt_highlight_2" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_2" class="form-control m-3 h-250px"> 
+         //Get
+         var data= GetDateFlatpickr("#Date");
+         //Set
+         SetDateFlatpickr("#Date","08/07/2022 14:42");
+         //active
+        $(function() {
+          LoadFlatpickr();
+        })
+</textarea>
+
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_2">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="kt_highlight_1" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_1" class="form-control m-3 h-250px">   &lt;div class="col-lg-3 w-300px">
+            &lt;div class="form-group row mb-4">
+                &lt;div class="col-lg-12 form-control form-control-floating card">
+                    &lt;input class="form-input input-date" id="Date" type="text" name="date" value="@(DateTime.Now.ConvertDateTimeToString())">
+                    &lt;label class="form-label" for="Date">Date&lt;span class="text-danger">*&lt;/span>&lt;/label>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div> </textarea>
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_1">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            ClipBroardId("kt_clipboard_2");
+            ClipBroardId("kt_clipboard_1");
+        </script>
+
+        <br />
+
+        <div class="card-header border-0">
+            <h3 class="card-title fw-bolder text-dark">Time</h3>
+            <div class="card-toolbar">
+            </div>
+        </div>
+        <div class="col-lg-3 w-300px">
+            <div class="form-group row mb-4">
+                <div class="col-lg-12 form-control form-control-floating card">
+                    <input class="form-input input-time" id="Time" type="text" name="date" value="@(DateTime.Now.ConvertDateTimeToString())">
+                    <label class="form-label" for="Time">Time<span class="text-danger">*</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_3" role="tab">JAVASCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_4" role="tab">HTML</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="kt_highlight_3" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_3" class="form-control m-3 h-250px"> 
+         //Get
+         var data= GetTimeFlatpickr("#Time");
+         //Set
+         SetTimeFlatpickr("#Time","08/07/2022 14:42");
+         //active
+        $(function() {
+          LoadFlatpickr();
+        })
+</textarea>
+
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_3">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="kt_highlight_4" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_4" class="form-control m-3 h-250px">     &lt;div class="col-lg-3 w-300px">
+            &lt;div class="form-group row mb-4">
+                &lt;div class="col-lg-12 form-control form-control-floating card">
+                    &lt;input class="form-input input-time" id="Time" type="text" name="Time" value="@(DateTime.Now.ConvertDateTimeToString())">
+                    &lt;label class="form-label" for="Time">Date&lt;span class="text-danger">*&lt;/span>&lt;/label>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div> </textarea>
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_4">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            ClipBroardId("kt_clipboard_3");
+            ClipBroardId("kt_clipboard_4");
+        </script>
+        <br />
+        <div class="card-header border-0">
+            <h3 class="card-title fw-bolder text-dark">Datetime</h3>
+            <div class="card-toolbar">
+            </div>
+        </div>
+        <div class="col-lg-3 w-300px">
+            <div class="form-group row mb-4">
+                <div class="col-lg-12 form-control form-control-floating card">
+                    <input class="form-input input-datetime" id="Datetime" type="text" name="date" value="@(DateTime.Now.ConvertDateTimeToString())">
+                    <label class="form-label" for="Datetime">Datetime<span class="text-danger">*</span></label>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <div class="">
+                <ul class="nav" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#kt_highlight_5" role="tab">JAVASCRIPT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#kt_highlight_6" role="tab">HTML</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="kt_highlight_5" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_5" class="form-control m-3 h-250px"> 
+         //Get
+         var data= GetDateTimeFlatpickr("#DateTime");
+         //Set
+         SetDateTimeFlatpickr("#DateTime","08/07/2022 14:42");
+         //active
+        $(function() {
+          LoadFlatpickr();
+        })
+</textarea>
+
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_5">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="kt_highlight_6" role="tabpanel">
+                        <div class="highlight-code">
+                            <div class="card card-bordered">
+                                <div class="card-body">
+                                    <div class="input-group">
+                                        <textarea id="kt_clipboard_6" class="form-control m-3 h-250px">     &lt;div class="col-lg-3 w-300px">
+            &lt;div class="form-group row mb-4">
+                &lt;div class="col-lg-12 form-control form-control-floating card">
+                    &lt;input class="form-input input-datetime" id="DateTime" type="text" name="DateTime" value="@(DateTime.Now.ConvertDateTimeToString())">
+                    &lt;label class="form-label" for="DateTime">Date&lt;span class="text-danger">*&lt;/span>&lt;/label>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div> </textarea>
+                                        <button class="btn btn-light-primary h-50px mt-3" data-clipboard-target="#kt_clipboard_6">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            ClipBroardId("kt_clipboard_5");
+            ClipBroardId("kt_clipboard_6");
+        </script>
+    </div>
+    <!--end::Body-->
+</div>
